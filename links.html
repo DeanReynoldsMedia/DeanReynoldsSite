@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Reynolds - All My Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 1.5rem;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .profile h1 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile h1 span {
+            color: #dc143c;
+        }
+
+        .profile p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            color: #dc143c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .link-button {
+            display: block;
+            background: white;
+            color: #1a1a2e;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .link-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #dc143c;
+            color: white;
+        }
+
+        .link-button i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .link-description {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        .link-button:hover .link-description {
+            color: #ffcccc;
+        }
+
+        .featured {
+            background: linear-gradient(135deg, #dc143c 0%, #b01030 100%);
+            color: white;
+            border: none;
+        }
+
+        .featured:hover {
+            background: linear-gradient(135deg, #b01030 0%, #dc143c 100%);
+            transform: translateY(-3px) scale(1.02);
+        }
+
+        .featured .link-description {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .coming-soon {
+            background: #f0f0f0;
+            color: #999;
+            cursor: not-allowed;
+        }
+
+        .coming-soon:hover {
+            transform: none;
+            background: #f0f0f0;
+            color: #999;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .social-icon:hover {
+            background: #dc143c;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile h1 {
+                font-size: 1.6rem;
+            }
+
+            .profile p {
+                font-size: 1rem;
+            }
+
+            .link-button {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://i.postimg.cc/YGGZTyVx/Cover.jpg" alt="Dean Reynolds" class="profile-image">
+            <h1>Dean Reynolds <span>Music Media</span></h1>
+            <p>Music Publishing Expert</p>
+            <p class="tagline">Helping the Gospel community build generational wealth with their music</p>
+        </div>
+
+        <!-- Featured Services -->
+        <div class="section">
+            <h2 class="section-title">🔥 Work With Me</h2>
+            
+            <a href="https://cal.com/deanreynoldsmusicmedia/booking" class="link-button featured">
+                <i class="fas fa-calendar-check"></i> Book a Consultation
+                <span class="link-description">$150 / 45 minutes - Music publishing strategy session</span>
+            </a>
+
+            <a href="/coaching" class="link-button">
+                <i class="fas fa-graduation-cap"></i> 90-Day Coaching Program
+                <span class="link-description">Transform your music catalog into generational wealth</span>
+            </a>
+        </div>
+
+        <!-- Digital Products & Courses -->
+        <div class="section">
+            <h2 class="section-title">📚 Courses & Resources</h2>
+            
+            <a href="https://deanreynoldsmedia.systeme.io/f48d99d1" class="link-button">
+                <i class="fas fa-book"></i> Free E-Book
+                <span class="link-description">Essential music publishing guide</span>
+            </a>
+
+            <a href="https://www.udemy.com/course/music-publishing-madeasy/" class="link-button">
+                <i class="fas fa-video"></i> Music Publishing 101 Course
+                <span class="link-description">Complete course on Udemy</span>
+            </a>
+
+            <a href="https://www.youtube.com/@deanreynoldsmusic" class="link-button">
+                <i class="fab fa-youtube"></i> YouTube University
+                <span class="link-description">Free music business education</span>
+            </a>
+
+            <a href="#" class="link-button">
+                <i class="fas fa-chart-line"></i> Positive Growth
+                <span class="link-description">YouTube growth strategies for creators</span>
+            </a>
+        </div>
+
+        <!-- Podcasts & Media -->
+        <div class="section">
+            <h2 class="section-title">🎙️ Podcasts & Media</h2>
+            
+            <a href="#" class="link-button">
+                <i class="fas fa-microphone"></i> Studio Cut Podcast
+                <span class="link-description">Music industry insights & interviews</span>
+            </a>
+
+            <a href="#" class="link-button">
+                <i class="fas fa-podcast"></i> Damita UnCut Radio Show
+                <span class="link-description">WOVU 95.9 FM</span>
+            </a>
+        </div>
+
+        <!-- Coming Soon -->
+        <div class="section">
+            <h2 class="section-title">🚀 Coming Soon</h2>
+            
+            <a href="#" class="link-button coming-soon">
+                <i class="fas fa-book-open"></i> Music ADHD: Your Superpower
+                <span class="coming-soon-badge">Easter 2026</span>
+                <span class="link-description">Book launch - Transform your ADHD into creative power</span>
+            </a>
+
+            <a href="#" class="link-button coming-soon">
+                <i class="fas fa-shopping-bag"></i> Faith is Super Hot Merch
+                <span class="coming-soon-badge">Coming Soon</span>
+                <span class="link-description">Hoodies, hats, and more</span>
+            </a>
+        </div>
+
+        <!-- Social Media -->
+        <div class="section">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/deanreynoldsmusic" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@deanreynoldsmusic" target="_blank" class="social-icon" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1DTyNucqkn/?mibextid=wwXIfr" target="_blank" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deanreynoldsmusic" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 Dean Reynolds Music Media LLC</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
+
+<!-- Luther AI Assistant Widget -->
+<!-- Add this code before the closing </body> tag on EVERY page -->
+
+<style>
+    /* Luther Chat Bubble Widget */
+    .luther-bubble-widget {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999999;
+    }
+
+    .luther-bubble-btn {
+        width: 80px;
+        height: 80px;
+        background: #F5C400;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(245, 196, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        color: #000;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .luther-bubble-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 25px rgba(245, 196, 0, 0.7);
+        background: #e6b800;
+    }
+
+    .luther-bubble-btn.active {
+        background: #d4a600;
+    }
+
+    .luther-icon {
+        font-size: 2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .luther-panel-widget {
+        position: fixed;
+        bottom: 130px;
+        right: 30px;
+        width: 420px;
+        height: 650px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 50px rgba(0,0,0,0.4);
+        display: none;
+        flex-direction: column;
+        z-index: 999998;
+        overflow: hidden;
+    }
+
+    .luther-panel-widget.show {
+        display: flex;
+        animation: lutherSlideUp 0.3s ease-out;
+    }
+
+    @keyframes lutherSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .luther-header {
+        background: #F5C400;
+        color: #000;
+        padding: 1.2rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .luther-header h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .luther-close-btn {
+        background: none;
+        border: none;
+        color: #000;
+        font-size: 1.8rem;
+        cursor: pointer;
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s;
+        line-height: 1;
+    }
+
+    .luther-close-btn:hover {
+        opacity: 0.6;
+    }
+
+    .luther-iframe-container {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .luther-iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .luther-bubble-widget {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .luther-bubble-btn {
+            width: 70px;
+            height: 70px;
+            font-size: 0.9rem;
+        }
+
+        .luther-icon {
+            font-size: 1.8rem;
+        }
+
+        .luther-panel-widget {
+            width: calc(100vw - 40px);
+            right: 20px;
+            bottom: 110px;
+            height: 550px;
+            max-height: calc(100vh - 160px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .luther-bubble-btn {
+            width: 65px;
+            height: 65px;
+        }
+
+        .luther-panel-widget {
+            height: 500px;
+        }
+    }
+</style>
+
+<!-- Luther Bubble Button -->
+<div class="luther-bubble-widget">
+    <button class="luther-bubble-btn" onclick="toggleLutherWidget()" id="lutherBtn" aria-label="Chat with Luther AI">
+        <span class="luther-icon">🤖</span>
+        <span>Luther</span>
+    </button>
+</div>
+
+<!-- Luther Chat Panel -->
+<div class="luther-panel-widget" id="lutherPanel">
+    <div class="luther-header">
+        <h3>
+            <span>🤖</span>
+            <span>Luther AI Assistant</span>
+        </h3>
+        <button class="luther-close-btn" onclick="toggleLutherWidget()" aria-label="Close Luther">
+            ×
+        </button>
+    </div>
+    <div class="luther-iframe-container">
+        <iframe src="https://luther-publishing-guide.lovable.app/embed" 
+                title="Luther - AI Music Publishing Assistant"
+                allow="microphone; camera">
+        </iframe>
+    </div>
+</div>
+
+<script>
+    function toggleLutherWidget() {
+        const panel = document.getElementById('lutherPanel');
+        const button = document.getElementById('lutherBtn');
+        
+        if (panel && button) {
+            panel.classList.toggle('show');
+            button.classList.toggle('active');
+        }
+    }
+
+    // Close panel when clicking outside
+    document.addEventListener('click', function(event) {
+        const panel = document.getElementById('lutherPanel');
+        const button = document.getElementById('lutherBtn');
+        
+        if (panel && button && panel.classList.contains('show')) {
+            if (!panel.contains(event.target) && !button.contains(event.target)) {
+                panel.classList.remove('show');
+                button.classList.remove('active');
+            }
+        }
+    });
+
+    // Prevent panel clicks from closing it
+    const lutherPanel = document.getElementById('lutherPanel');
+    if (lutherPanel) {
+        lutherPanel.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    }
+</script>
+
+</body>
+</html>

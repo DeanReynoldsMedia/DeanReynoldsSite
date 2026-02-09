@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Coaching Program - Dean Reynolds Music Media</title>
+    <meta name="description" content="90-day intensive coaching program for independent artists. Music business strategy, artist development, and career planning with 25+ years of industry experience.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #201F5B 0%, #EE2524 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '🎵 🎤 🎸 🎹';
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.1;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 24px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #201F5B;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #201F5B;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Program Overview */
+        .overview {
+            background: white;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .overview-card {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #EE2524;
+        }
+
+        .overview-card .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .overview-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #201F5B;
+        }
+
+        .overview-card p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Who Is This For */
+        .who-for {
+            background: linear-gradient(135deg, #201F5B 0%, #EE2524 100%);
+            color: white;
+        }
+
+        .who-for-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .who-for-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid white;
+        }
+
+        .who-for-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .who-for-item p {
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        /* 12-Week Curriculum */
+        .curriculum {
+            background: #f8f9fa;
+        }
+
+        .curriculum-timeline {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .phase {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .phase-header {
+            background: linear-gradient(135deg, #201F5B, #EE2524);
+            color: white;
+            padding: 25px 35px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .phase-header h3 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .phase-header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .week-list {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .week {
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .week:last-child {
+            border-bottom: none;
+        }
+
+        .week h4 {
+            font-size: 20px;
+            color: #201F5B;
+            margin-bottom: 10px;
+        }
+
+        .week ul {
+            margin-left: 20px;
+            color: #666;
+        }
+
+        .week li {
+            margin-bottom: 5px;
+        }
+
+        /* What You Get */
+        .what-you-get {
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit-item {
+            background: #f8f9fa;
+            padding: 35px 25px;
+            border-radius: 15px;
+            border-top: 4px solid #EE2524;
+        }
+
+        .benefit-item .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #201F5B;
+        }
+
+        .benefit-item p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Pricing */
+        .pricing {
+            background: #f8f9fa;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #EE2524;
+            transform: scale(1.05);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #EE2524;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .pricing-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #201F5B;
+        }
+
+        .pricing-card .price {
+            font-size: 48px;
+            font-weight: 900;
+            color: #EE2524;
+            margin: 20px 0;
+        }
+
+        .pricing-card .price span {
+            font-size: 20px;
+            color: #666;
+        }
+
+        .pricing-card ul {
+            text-align: left;
+            margin: 30px 0;
+            list-style: none;
+        }
+
+        .pricing-card li {
+            padding: 12px 0;
+            color: #666;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .pricing-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #EE2524;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .pricing-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #201F5B, #EE2524);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .pricing-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(238, 37, 36, 0.4);
+        }
+
+        /* Success Stories */
+        .success {
+            background: white;
+        }
+
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .success-card {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 15px;
+            border-left: 4px solid #EE2524;
+        }
+
+        .success-card .quote {
+            font-size: 18px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .success-card .result {
+            background: rgba(238, 37, 36, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #EE2524;
+            font-weight: bold;
+        }
+
+        .success-card .author {
+            font-weight: 600;
+            color: #201F5B;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #f8f9fa;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #201F5B;
+        }
+
+        .faq-item h4 {
+            font-size: 20px;
+            color: #201F5B;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Application CTA */
+        .apply-cta {
+            background: linear-gradient(135deg, #201F5B 0%, #EE2524 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .apply-cta h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .apply-cta p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .footer a {
+            color: #EE2524;
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 22px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="badge">🎯 90-Day Intensive Program</div>
+            <h1>Artist Coaching Program</h1>
+            <div class="subtitle">Transform Your Music Career in 12 Weeks</div>
+            <p>Comprehensive artist development, music business strategy, and career planning from a 25-year industry veteran who's worked with Capitol Records, BET, and BBC Television.</p>
+            <a href="#apply" class="cta-button">Apply Now</a>
+            <a href="#curriculum" class="cta-button secondary">View Curriculum</a>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="overview">
+        <div class="container">
+            <h2 class="section-title">Program Overview</h2>
+            <p class="section-subtitle">A structured 90-day journey to build a sustainable music career</p>
+
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="icon">⏰</div>
+                    <h3>12 Weeks</h3>
+                    <p>Intensive 90-day program with weekly sessions and daily accountability</p>
+                </div>
+
+                <div class="overview-card">
+                    <div class="icon">🎯</div>
+                    <h3>1-on-1 Coaching</h3>
+                    <p>Personal attention and customized strategies for YOUR specific goals</p>
+                </div>
+
+                <div class="overview-card">
+                    <div class="icon">📚</div>
+                    <h3>Complete Training</h3>
+                    <p>Music business, publishing, marketing, branding, and revenue streams</p>
+                </div>
+
+                <div class="overview-card">
+                    <div class="icon">🤝</div>
+                    <h3>Ongoing Support</h3>
+                    <p>Email support, accountability check-ins, and resource library access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="who-for">
+        <div class="container">
+            <h2 class="section-title">Who Is This Program For?</h2>
+            <p class="section-subtitle">This intensive coaching is perfect for serious artists ready to build a real business</p>
+
+            <div class="who-for-grid">
+                <div class="who-for-item">
+                    <h4>✓ Independent Artists</h4>
+                    <p>You've released music but struggle to build momentum, grow your fanbase, or generate consistent income.</p>
+                </div>
+
+                <div class="who-for-item">
+                    <h4>✓ Emerging Artists</h4>
+                    <p>You have talent and content, but need a clear roadmap for turning your music into a sustainable career.</p>
+                </div>
+
+                <div class="who-for-item">
+                    <h4>✓ Serious About Music Business</h4>
+                    <p>You're done treating music as a hobby. You're ready to build systems, collect royalties, and generate revenue.</p>
+                </div>
+
+                <div class="who-for-item">
+                    <h4>✓ Ready to Invest</h4>
+                    <p>You understand that building a music career requires time, energy, and financial investment in yourself.</p>
+                </div>
+
+                <div class="who-for-item">
+                    <h4>✓ Willing to Do the Work</h4>
+                    <p>You're committed to showing up every week, completing assignments, and implementing what you learn.</p>
+                </div>
+
+                <div class="who-for-item">
+                    <h4>✓ Want Accountability</h4>
+                    <p>You need structure, deadlines, and someone to keep you on track as you build your career.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12-Week Curriculum -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <h2 class="section-title">12-Week Curriculum</h2>
+            <p class="section-subtitle">Structured learning path with clear milestones and deliverables</p>
+
+            <div class="curriculum-timeline">
+                <!-- Phase 1 -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h3>Phase 1: Foundation (Weeks 1-4)</h3>
+                        <p>Build Your Business Foundation</p>
+                    </div>
+                    <div class="week-list">
+                        <div class="week">
+                            <h4>Week 1: Music Business Essentials</h4>
+                            <ul>
+                                <li>Understanding the music industry ecosystem</li>
+                                <li>Setting SMART goals for your music career</li>
+                                <li>Defining your artist brand and unique value</li>
+                                <li>Creating your 12-month career roadmap</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 2: Music Publishing 101</h4>
+                            <ul>
+                                <li>Copyright basics and protecting your work</li>
+                                <li>PRO registration (ASCAP, BMI, SESAC)</li>
+                                <li>Understanding mechanical vs performance royalties</li>
+                                <li>Setting up proper royalty collection</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 3: Distribution & Revenue Streams</h4>
+                            <ul>
+                                <li>Choosing the right distribution partner</li>
+                                <li>Understanding streaming economics</li>
+                                <li>Building multiple income sources</li>
+                                <li>Sync licensing opportunities</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 4: Branding & Positioning</h4>
+                            <ul>
+                                <li>Defining your artist brand identity</li>
+                                <li>Creating compelling artist bio and story</li>
+                                <li>Visual branding and design consistency</li>
+                                <li>Positioning yourself in the market</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h3>Phase 2: Growth (Weeks 5-8)</h3>
+                        <p>Build Your Audience & Presence</p>
+                    </div>
+                    <div class="week-list">
+                        <div class="week">
+                            <h4>Week 5: Social Media Strategy</h4>
+                            <ul>
+                                <li>Platform selection and optimization</li>
+                                <li>Content planning and creation systems</li>
+                                <li>Engagement strategies that work</li>
+                                <li>Growing authentic followers</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 6: Email Marketing & Fan Building</h4>
+                            <ul>
+                                <li>Building your email list from day one</li>
+                                <li>Creating compelling lead magnets</li>
+                                <li>Email sequences that convert</li>
+                                <li>Nurturing superfans</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 7: Release Strategy</h4>
+                            <ul>
+                                <li>Planning strategic music releases</li>
+                                <li>Pre-release marketing campaigns</li>
+                                <li>Playlist pitching strategies</li>
+                                <li>Maximizing release day impact</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 8: Press & Media Relations</h4>
+                            <ul>
+                                <li>Creating press kits that get attention</li>
+                                <li>Pitching to blogs and media</li>
+                                <li>Building industry relationships</li>
+                                <li>Getting featured and interviewed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h3>Phase 3: Monetization (Weeks 9-12)</h3>
+                        <p>Turn Your Music Into Revenue</p>
+                    </div>
+                    <div class="week-list">
+                        <div class="week">
+                            <h4>Week 9: Live Performance Revenue</h4>
+                            <ul>
+                                <li>Booking paid gigs and shows</li>
+                                <li>Negotiating performance contracts</li>
+                                <li>Building a touring strategy</li>
+                                <li>Virtual concert opportunities</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 10: Merchandise & Products</h4>
+                            <ul>
+                                <li>Creating sellable merchandise</li>
+                                <li>Print-on-demand vs inventory</li>
+                                <li>Pricing and profit margins</li>
+                                <li>Selling at shows and online</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 11: Sponsorships & Partnerships</h4>
+                            <ul>
+                                <li>Identifying brand partnership opportunities</li>
+                                <li>Creating sponsorship proposals</li>
+                                <li>Negotiating deals and contracts</li>
+                                <li>Building win-win relationships</li>
+                            </ul>
+                        </div>
+
+                        <div class="week">
+                            <h4>Week 12: Sustainability & Next Steps</h4>
+                            <ul>
+                                <li>Creating your 12-month action plan</li>
+                                <li>Setting revenue and growth targets</li>
+                                <li>Building systems for consistency</li>
+                                <li>Long-term career strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="section-title">What's Included</h2>
+            <p class="section-subtitle">Everything you need to build a sustainable music career</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">🎯</div>
+                    <h4>12 Weekly 1-on-1 Sessions</h4>
+                    <p>60-minute video calls focused on your specific goals, challenges, and progress.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">📚</div>
+                    <h4>Comprehensive Workbooks</h4>
+                    <p>Week-by-week guides, worksheets, templates, and action plans.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">📧</div>
+                    <h4>Email Support</h4>
+                    <p>Ongoing support between sessions for questions and guidance.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">✅</div>
+                    <h4>Weekly Assignments</h4>
+                    <p>Actionable tasks to implement what you learn and build momentum.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">📊</div>
+                    <h4>Progress Tracking</h4>
+                    <p>Regular check-ins and accountability to keep you on track.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">🎁</div>
+                    <h4>Resource Library</h4>
+                    <p>Templates, contracts, checklists, and tools for your music business.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">🎓</div>
+                    <h4>Bonus Trainings</h4>
+                    <p>Additional video modules on specialized topics and strategies.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">🤝</div>
+                    <h4>Industry Connections</h4>
+                    <p>Introductions to key industry contacts when appropriate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Program Investment</h2>
+            <p class="section-subtitle">Transform your music career in 90 days</p>
+
+            <div class="pricing-grid" style="max-width: 700px;">
+                <!-- Single Package -->
+                <div class="pricing-card featured" style="transform: none;">
+                    <h3>90-Day Artist Coaching Program</h3>
+                    <div class="price">$2,997<span>/12 weeks</span></div>
+                    
+                    <p style="color: #666; font-size: 16px; margin: 20px 0; padding: 0 20px;">
+                        <strong>Total Value: $4,000+</strong>
+                    </p>
+
+                    <ul>
+                        <li>12 Weekly 1-on-1 Video Sessions (60 min)</li>
+                        <li>Complete 12-Week Curriculum</li>
+                        <li>Phase 1: Foundation (Weeks 1-4)</li>
+                        <li>Phase 2: Growth (Weeks 5-8)</li>
+                        <li>Phase 3: Monetization (Weeks 9-12)</li>
+                        <li>Email Support Between Sessions</li>
+                        <li>Weekly Action Plans & Assignments</li>
+                        <li>Progress Tracking & Accountability</li>
+                        <li>Resource Library & Templates</li>
+                        <li>Recorded Sessions (Dropbox Access)</li>
+                        <li>Certificate of Completion</li>
+                    </ul>
+
+                    <div style="margin: 30px 0; padding: 25px; background: #f8f9fa; border-radius: 10px; text-align: left;">
+                        <h4 style="color: #201F5B; margin-bottom: 15px; font-size: 20px;">💳 Payment Options:</h4>
+                        
+                        <div style="margin-bottom: 12px;">
+                            <strong style="color: #EE2524;">Pay in Full:</strong>
+                            <span style="color: #666; margin-left: 10px;">$2,997 (Best Value!)</span>
+                        </div>
+
+                        <div style="margin-bottom: 12px;">
+                            <strong style="color: #EE2524;">3 Monthly Payments:</strong>
+                            <span style="color: #666; margin-left: 10px;">$999/month</span>
+                        </div>
+
+                        <div style="margin-bottom: 12px;">
+                            <strong style="color: #EE2524;">6 Monthly Payments:</strong>
+                            <span style="color: #666; margin-left: 10px;">$549/month</span>
+                        </div>
+
+                        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                            <strong style="color: #EE2524;">Down Payment Option:</strong>
+                            <span style="color: #666; margin-left: 10px;">$1,000 down + 4 payments of $499</span>
+                        </div>
+                    </div>
+
+                    <a href="https://cal.com/deanreynoldsmusicmedia/booking" class="pricing-cta">Schedule Application Call</a>
+                    
+                    <p style="margin-top: 20px; font-size: 14px; color: #999;">
+                        Limited spots available each quarter
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional Add-Ons / Upsells -->
+    <section class="what-you-get" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Optional Add-Ons</h2>
+            <p class="section-subtitle">Enhance your coaching experience with specialized workshops</p>
+
+            <div class="benefits-grid" style="max-width: 900px; margin: 40px auto;">
+                <div class="benefit-item" style="border-top: 4px solid #201F5B;">
+                    <div class="icon">🎤</div>
+                    <h4>Stage Presence Workshops</h4>
+                    <p style="margin-bottom: 15px;">Two intensive Saturday workshops (4 hours each) focused on commanding the stage for both virtual and live performances.</p>
+                    <div style="font-size: 24px; color: #EE2524; font-weight: bold; margin: 15px 0;">
+                        +$1,000
+                    </div>
+                    <p style="font-size: 14px; color: #666;">
+                        <strong>Includes:</strong> Performance techniques, audience engagement, stage movement, vocal presence, camera presence for live streams
+                    </p>
+                </div>
+
+                <div class="benefit-item" style="border-top: 4px solid #201F5B;">
+                    <div class="icon">📹</div>
+                    <h4>Live Streaming Setup Workshops</h4>
+                    <p style="margin-bottom: 15px;">Two intensive Saturday workshops (4 hours each) covering professional home studio setup and live streaming production.</p>
+                    <div style="font-size: 24px; color: #EE2524; font-weight: bold; margin: 15px 0;">
+                        +$1,000
+                    </div>
+                    <p style="font-size: 14px; color: #666;">
+                        <strong>Includes:</strong> Equipment recommendations, lighting & audio setup, streaming software, video set design, customized blueprint
+                    </p>
+                </div>
+
+                <div class="benefit-item" style="border-top: 4px solid #EE2524; background: linear-gradient(135deg, rgba(32,31,91,0.05), rgba(238,37,36,0.05));">
+                    <div class="icon">🎯</div>
+                    <h4>Complete Package</h4>
+                    <p style="margin-bottom: 15px;"><strong>90-Day Coaching + Both Workshop Add-Ons</strong></p>
+                    <div style="font-size: 32px; color: #EE2524; font-weight: bold; margin: 15px 0;">
+                        $4,497
+                    </div>
+                    <p style="font-size: 16px; color: #201F5B; font-weight: bold;">
+                        Save $500!
+                    </p>
+                    <p style="font-size: 14px; color: #666; margin-top: 10px;">
+                        (Regular price: $4,997)
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://cal.com/deanreynoldsmusicmedia/booking" class="cta-button">Discuss Add-Ons in Application Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories / Proven Results -->
+    <section class="success">
+        <div class="container">
+            <h2 class="section-title">Proven Track Record</h2>
+            <p class="section-subtitle">25+ years helping artists build sustainable music careers</p>
+
+            <div class="success-grid">
+                <div class="success-card">
+                    <div class="quote">"Dean's music publishing expertise helped me recover thousands in royalties I didn't even know I was owed. His guidance on proper registration and collection has been life-changing."</div>
+                    <div class="result">Result: $20,000+ in recovered royalties</div>
+                    <div class="author">— Publishing Client, Gospel Artist</div>
+                </div>
+
+                <div class="success-card">
+                    <div class="quote">"Working with Dean opened doors I never thought possible. His industry connections and strategic approach to artist development have been invaluable to my career growth."</div>
+                    <div class="result">Result: Major sync placements + industry partnerships</div>
+                    <div class="author">— Artist Development Client</div>
+                </div>
+
+                <div class="success-card">
+                    <div class="quote">"Dean's coaching gave me the business foundation I was missing. I went from releasing music randomly to having a complete strategy with multiple revenue streams."</div>
+                    <div class="result">Result: Sustainable 6-figure music business</div>
+                    <div class="author">— Independent Artist, Atlanta</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(238, 37, 36, 0.05); border-radius: 15px;">
+                <h3 style="font-size: 32px; color: #201F5B; margin-bottom: 20px;">Industry Credentials</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; max-width: 900px; margin: 0 auto;">
+                    <div>
+                        <p style="color: #666; line-height: 1.8;">
+                            ✓ 25+ years music industry experience<br>
+                            ✓ Worked with Capitol Records<br>
+                            ✓ BET & BBC Television credits<br>
+                            ✓ 15+ countries worldwide
+                        </p>
+                    </div>
+                    <div>
+                        <p style="color: #666; line-height: 1.8;">
+                            ✓ Music Director at Restoration Church<br>
+                            ✓ Bass Instructor at Basic Bass Music School<br>
+                            ✓ Berklee College of Music graduate<br>
+                            ✓ Gospel music industry specialist
+                        </p>
+                    </div>
+                    <div>
+                        <p style="color: #666; line-height: 1.8;">
+                            ✓ Artists: Kirk Franklin, Mary Mary, CeCe Winans<br>
+                            ✓ AI Music Copyright Specialist<br>
+                            ✓ Music Publishing Expert<br>
+                            ✓ Professional Booking Agent
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h4>How is this different from a one-time consultation?</h4>
+                <p>A consultation gives you advice for one specific issue. This 12-week program provides comprehensive training, ongoing support, accountability, and implementation across all aspects of your music career. You're building a complete business foundation, not just getting answers to one question.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>When do sessions happen?</h4>
+                <p>Sessions are scheduled based on mutual availability. I offer evening and weekend slots to accommodate artists with day jobs. We'll find a consistent weekly time that works for both of us.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What if I miss a session?</h4>
+                <p>Life happens! You can reschedule with 24-hour notice. Sessions missed without notice are forfeited, but we'll always work to accommodate genuine emergencies.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do I need to have music released already?</h4>
+                <p>No! This program works whether you're planning your first release or you've been releasing music for years. We'll meet you where you are and build from there.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What genres do you work with?</h4>
+                <p>While my background is in gospel and R&B, the music business principles apply across all genres. I've coached artists in hip-hop, pop, rock, jazz, and more.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Is there a refund policy?</h4>
+                <p>Due to the personalized nature of 1-on-1 coaching, payments are non-refundable once the program begins. However, I'm committed to your success and will work with you to ensure you get maximum value.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can I upgrade my package mid-program?</h4>
+                <p>Yes! You can upgrade from Standard to Premium or VIP at any time. You'll pay the difference and gain immediate access to upgraded benefits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application CTA -->
+    <section class="apply-cta" id="apply">
+        <div class="container">
+            <h2>Ready to Transform Your Music Career?</h2>
+            <p>Limited spots available each quarter. Apply now to secure your place.</p>
+            <a href="https://cal.com/deanreynoldsmusicmedia/booking" class="cta-button">Schedule Application Call</a>
+            <p style="margin-top: 20px; font-size: 16px; opacity: 0.9;">
+                Not sure if this is right for you? Book a free 15-minute discovery call to discuss your goals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><strong>Artist Coaching Program</strong> by H. Dean Reynolds</p>
+        <p>Dean Reynolds Music Media LLC</p>
+        <p style="margin-top: 20px;">
+            <a href="https://deanreynolds.com">← Back to Main Site</a> | 
+            <a href="/cdn-cgi/l/email-protection#1f7b7a7e716d7a667170737b6c727a7b767e5f78727e7673317c7072">Contact</a>
+        </p>
+        <p style="margin-top: 20px; color: #999; font-size: 14px;">
+            © 2024 Dean Reynolds Music Media LLC. All Rights Rese

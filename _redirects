@@ -1,0 +1,13 @@
+# Netlify Redirects for DeanReynolds.com
+# Place this file in the root of your site (same level as index.html)
+
+# Consultation booking redirects
+/consultation                  https://book.deanreynolds.com/consultation                301
+/consultation/45               https://book.deanreynolds.com/consultation/45             301
+/consultation/90               https://book.deanreynolds.com/consultation/90             301
+
+# ADHD Book redirect to existing website
+/ADHDBook                      https://musicadhdbook.com                                  301
+/adhdbook                      https://musicadhdbook.com                                  301
+/ebook https://deanreynoldsmedia.systeme.io/f48d99d1 301!
+/ebook/ https://deanreynoldsmedia.systeme.io/f48d99d1 301!

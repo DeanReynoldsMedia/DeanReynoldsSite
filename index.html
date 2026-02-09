@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music publishing expert helping independent gospel artists protect royalties and build real income. Book a paid consultation today.">
+    <title>Gospel Music Publishing Consultant | Dean Reynolds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #dc143c;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #dc143c;
+        }
+
+        .cta-button {
+            background: #dc143c;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #b01030;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        /* Video Background */
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* Dark overlay so text is readable */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.85) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: white;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 span {
+            color: #dc143c;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.6s forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .btn-primary {
+            background: #dc143c;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #b01030;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(220, 20, 60, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1a1a2e;
+            transform: translateY(-3px);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: #f8f9fa;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .stats-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #dc143c;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            color: #1a1a2e;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 5%;
+            background: #f8f9fa;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-image {
+            margin-bottom: 2rem;
+            opacity: 1;
+            transform: scale(1);
+            transition: all 0.8s ease-out;
+        }
+
+        .about-image.animate-in {
+            animation: scaleIn 0.8s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border: 5px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease-out;
+        }
+
+        .about-content h2.animate-in {
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about-content h2 span {
+            color: #dc143c;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease-out;
+        }
+
+        .about-content p.animate-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #dc143c 0%, #b01030 100%);
+            color: white !important;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 2.5rem auto;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.3);
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease-out;
+        }
+
+        .highlight-box.animate-in {
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white !important;
+        }
+
+        .highlight-box p {
+            color: white !important;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+            padding: 4rem 5%;
+        }
+
+        .booking-embed-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            height: 900px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .booking-embed-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 3rem;
+        }
+
+        .section-title span {
+            color: #dc143c;
+        }
+
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #dc143c;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #dc143c;
+            margin: 1rem 0;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 4rem 5%;
+            background: white;
+        }
+
+        /* Video Testimonials */
+        .video-testimonials {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .video-container {
+            width: 315px;
+            height: 560px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            background: #000;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .subsection-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #1a1a2e;
+            margin-bottom: 2rem;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #dc143c;
+        }
+
+        .testimonial-info h4 {
+            color: #1a1a2e;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-info p {
+            color: #dc143c;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .testimonial-text {
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .quote-icon {
+            font-size: 2rem;
+            color: #dc143c;
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f8f9fa;
+            padding: 4rem 5%;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #dc143c;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background: #dc143c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b01030;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            background: #1a1a2e;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .social-media h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            color: white;
+            font-size: 2.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #dc143c;
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: #16213e;
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #dc143c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            color: white;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            min-width: 44px;
+            min-height: 44px;
+            position: relative;
+            z-index: 1001;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .mobile-menu-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-image img {
+                margin: 0 auto;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem 0;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0;
+                padding: 0.8rem 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo" style="text-decoration: none; color: inherit;">Dean Reynolds <span>Music Media</span></a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/chat.html">Chat with Luther</a></li>
+                <li><a href="/ebook" target="_blank">Free E-Book</a></li>
+                <li><a href="/consultation" class="cta-button">Book Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Video Background -->
+        <iframe class="hero-video" 
+                src="https://www.youtube.com/embed/kKNz8P_fcmw?autoplay=1&mute=1&loop=1&playlist=kKNz8P_fcmw&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+        
+        <!-- Dark Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Help Independent Gospel Artists Protect Their Royalties and Build Real Income</h1>
+            <p>Turn your songs into protected assets and predictable royalty income.</p>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="/consultation" class="btn-primary" style="display: inline-block; margin-bottom: 0.75rem;">Book a Consultation</a>
+                <p style="font-size: 0.95rem; color: rgba(255,255,255,0.7); margin: 0;">Paid consultation. Limited spots weekly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>25+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Countries Served</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Artists Coached</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://i.postimg.cc/YGGZTyVx/Cover.jpg" alt="Dean Reynolds">
+            </div>
+            <div class="about-content">
+                <h2>From Royalty Protection to <span>Generational Wealth</span></h2>
+                <p>With over 25 years in the music industry, I've served multiple major artists including Kirk Franklin, Mary Mary, and CeCe Winans, working across 15 countries with Capitol Records, BET, and BBC Television.</p>
+                <p>I guide creatives through the business of music so they can build wealth, impact, and generational legacy, not just streams.</p>
+                
+                <div class="highlight-box">
+                    <h3>Real Results For Real Artists</h3>
+                    <ul style="text-align: left; list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li style="margin-bottom: 0.5rem;">Stop leaving money behind in royalties</li>
+                        <li style="margin-bottom: 0.5rem;">Get your publishing organized the right way</li>
+                        <li style="margin-bottom: 0.5rem;">Build a real income plan you can repeat</li>
+                    </ul>
+                    <p style="margin-bottom: 1.5rem;">Dean helped recover over $20,000 in royalties through the MLC process.</p>
+                    <a href="/consultation" class="btn-primary" style="display: inline-block; margin-bottom: 0.75rem;">Book a Consultation</a>
+                    <p style="font-size: 0.85rem; opacity: 0.85; margin-top: 0.5rem;">Also available: AI music copyright guidance.</p>
+                </div>
+
+                <p style="margin-top: 2rem; font-size: 1.15rem;"><strong>Music Publishing Expert  |  Artist Development Coach  |  Bassist  |  Podcast Producer</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services / Booking Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">Book a <span>Consultation</span></h2>
+        <div class="booking-embed-container">
+            <iframe src="https://book-with-dean.lovable.app/consultation" 
+                    class="booking-embed-iframe"
+                    title="Book a Consultation with Dean Reynolds"
+                    allow="payment"
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">What Artists Are <span>Saying</span></h2>
+        
+        <!-- Video Testimonials -->
+        <div class="video-testimonials">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/oy4vQPMeyFI" title="Client Testimonial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/LZlblpELfj0" title="Client Testimonial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-DdQXobAJ30" title="Client Testimonial 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Text Testimonials -->
+        <h3 class="subsection-title">More Success Stories</h3>
+        <div class="testimonials-grid">
+            <!-- Denise Nicole - matches Video 1 (left) -->
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <div class="testimonial-header">
+                    <img src="https://res.cloudinary.com/blab/image/upload/c_scale,w_100/v1764632505/production/user/19374/testimonials/vimpesndxm4ip5irvdsi" alt="Denise Nicole" class="testimonial-image">
+                    <div class="testimonial-info">
+                        <h4>Denise Nicole</h4>
+                        <p>Independent Artist</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "Dean's Course Empowered Me as an Independent Artist. After finishing the Music Publishing 101 course, I felt prepared, empowered, informed, and confident to take the right steps forward. Dean taught me all the little details I never knew how to handle. Please do yourself a favor: call Dean and sign up for his Music Publishing course."
+                </div>
+            </div>
+
+            <!-- Lydia Pernier - matches Video 2 (middle) -->
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <div class="testimonial-header">
+                    <img src="https://res.cloudinary.com/blab/image/upload/c_scale,w_100/v1574694771/production/user/19374/testimonials/jupo96ok5wonatbthb6u" alt="Lydia Pernier" class="testimonial-image">
+                    <div class="testimonial-info">
+                        <h4>Lydia Pernier</h4>
+                        <p>Singer Songwriter</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "The consultation with Dean was so worth it! I learned a lot, and it has helped me to just take care of certain things that I thought I wouldn't have to consider until after my project was done. He explained terms I had never even heard of and guided me on the right path to avoid costly mistakes. I feel so confident and more informed about putting out my EP!"
+                </div>
+            </div>
+
+            <!-- Tesharah Briscoe - matches Video 3 (right) -->
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <div class="testimonial-header">
+                    <img src="https://res.cloudinary.com/blab/image/upload/c_scale,w_100/v1591495945/production/user/19374/testimonials/c5fczjbw8yrl73yx0rz5" alt="Tesharah Briscoe" class="testimonial-image">
+                    <div class="testimonial-info">
+                        <h4>Tesharah Briscoe</h4>
+                        <p>Indie Artist</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "I love the support that I get from Dean Reynolds Media. I've received insightful materials that help me to be a wiser and more informed indie artist. That has set me on a successful music career path."
+                </div>
+            </div>
+
+            <!-- Samuel Clarke -->
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <div class="testimonial-header">
+                    <img src="https://res.cloudinary.com/blab/image/upload/c_scale,w_100/v1590639674/production/user/19374/testimonials/ynwe0b0tfarugprmtv9d" alt="Samuel Clarke" class="testimonial-image">
+                    <div class="testimonial-info">
+                        <h4>Samuel Clarke</h4>
+                        <p>Gospel Artist</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "We are blessed with the information you have provided to us in regards to getting protection and royalty for my music which are songs that the Lord has given to me. We enjoyed everything of the session and we are glad to have spoken to you and lighting us with the information we need for better publishing of my songs."
+                </div>
+            </div>
+
+            <!-- Gina Forsythe -->
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right quote-icon"></i>
+                <div class="testimonial-header">
+                    <img src="https://res.cloudinary.com/blab/image/upload/c_scale,w_100/v1591670655/production/user/19374/testimonials/v6fjusnprmxsdchjqy4e" alt="Gina Forsythe" class="testimonial-image">
+                    <div class="testimonial-info">
+                        <h4>Gina Forsythe</h4>
+                        <p>Artist</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    "My experience so far with Dean Reynolds Media has been a great one. Dean is easy to talk to, and he is very informative. Any questions I have are answered in detail—not just yes or no. When it comes to professionalism it is served with genuineness, so the experience is not felt as 'business as usual.'"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xrbnyzon" method="POST">
+                    <input type="hidden" name="_subject" value="New Contact from DeanReynolds.com">
+                    
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <p style="text-align: center; margin-top: 1.5rem; color: #666;">
+                    Or email directly: <a href="mailto:info@deanreynolds.com" style="color: #dc143c;">info@deanreynolds.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h2>Connect With Me</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/deanreynoldsmusicmedia?igsh=ZmdrM2F0MHZpeHE5&utm_source=qr" target="_blank" class="social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/@deanreynoldsmusicmedia?si=1FXYm5euUyqVrlJG" target="_blank" class="social-icon" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@deanreynoldsmusicmedia?_r=1&_t=ZT-924AhrbO0UQ" target="_blank" class="social-icon" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/deanreynoldsmusicmedia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1DTyNucqkn/?mibextid=wwXIfr" target="_blank" class="social-icon" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dean Reynolds Music Media LLC. All Rights Reserved.</p>
+        <p>Music Publishing Expert  AI Music Copyright Specialist  Music Business Coach</p>
+        <p><a href="mailto:info@deanreynolds.com">info@deanreynolds.com</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Scroll animations for About section
+        function animateOnScroll() {
+            const aboutImage = document.querySelector('.about-image');
+            const aboutHeading = document.querySelector('.about-content h2');
+            const aboutParagraphs = document.querySelectorAll('.about-content p');
+            const highlightBox = document.querySelector('.highlight-box');
+            
+            const elements = [aboutImage, aboutHeading, ...aboutParagraphs, highlightBox];
+            
+            elements.forEach((element, index) => {
+                if (element) {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        setTimeout(() => {
+                            element.classList.add('animate-in');
+                        }, index * 150); // Stagger animations
+                    }
+                }
+            });
+        }
+
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+        // Run on page load
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script src="/assets/luther-widget.js" defer></script>
+</body>
+</html> 
